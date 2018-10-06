@@ -1,32 +1,95 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#root,
+html {
+  height: 100%;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 200px) and (max-width: 699px) {
+  body {
+    background-image: url("./images/phone background.jpg");
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* HEADER CONTROLS */
+  .header {
+    margin: 0;
+    padding: 0;
   }
+
+  .logo {
+    height: 60px;
+    width: auto;
+    margin: 15px;
+  }
+
+  .icon {
+    background: none;
+    border: none;
+    float: right;
+    margin: 25px;
+  }
+
+  .material-icons {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  /* HOME CONTROLS */
+  .home {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .firstName {
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 200px;
+    color: #595959;
+  }
+
+  .lastName {
+    font-size: 60px;
+    font-weight: 250;
+    margin-top: -25px;
+    color: #595959;
+  }
+
+  @keyframes bounce {
+    from {
+      margin-top: 250px;
+    }
+    to {
+      margin-top: 245px;
+    }
+  }
+
+  .icon1 {
+    margin-top: 250px;
+    margin-left: 20px;
+    color: #595959;
+    text-align: center;
+    animation: bounce 1s infinite alternate ease;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1019px) {
+}
+
+@media only screen and (min-width: 1020px) and (max-width: 1439px) {
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 3000px) {
 }
