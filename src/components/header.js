@@ -1,13 +1,68 @@
-import React from "react";
-import logo from "../images/holsinger. logo.png";
+import React, { Component } from "react";
+import logo from "../images/holsinger. logo teal.png";
 
-const Header = () => (
-  <div className="container-fluid header">
-    <img className="logo" src={logo} alt="logo" />
-    <button className="icon">
-      <i className="material-icons">dehaze</i>
-    </button>
-  </div>
-);
+class Header extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showMenu: false
+    };
+
+    this.showMenu = this.showMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  showMenu(event) {
+    event.preventDefault();
+
+    this.setState({ showMenu: true }, () => {
+      document.addEventListener("click", this.closeMenu);
+    });
+  }
+
+  closeMenu() {
+    this.setState({ showMenu: false }, () => {
+      document.removeEventListener("click", this.closeMenu);
+    });
+  }
+
+  render() {
+    return (
+      <div className="container-fluid header">
+        <a href="/">
+          <img className="logo" src={logo} alt="logo" />
+        </a>
+
+        <button className="dropdown-icon" onClick={this.showMenu}>
+          <i className="material-icons nav">dehaze</i>
+        </button>
+        {this.state.showMenu ? (
+          <div className="menu col-xs-12">
+            <a href="/about" className="about-icon">
+              <i className="material-icons">person</i>
+            </a>
+
+            <a href="/portfolio" className="port-icon">
+              <i className="material-icons">apps</i>
+            </a>
+
+            <a href="/media" className="media-icon">
+              <i className="material-icons">hearing</i>
+            </a>
+
+            <a href="/services" className="service-icon">
+              <i className="material-icons">room_service</i>
+            </a>
+
+            <a href="/contact" className="contact-icon">
+              <i className="material-icons">email</i>
+            </a>
+          </div>
+        ) : null}
+      </div>
+    );
+  }
+}
 
 export default Header;

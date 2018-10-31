@@ -1,11 +1,15 @@
 * {
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0px 0px 0px 0px;
 }
 
 body {
   margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container-fluid {
   padding: 0;
 }
 
@@ -13,75 +17,235 @@ body {
 html {
   height: 100%;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 699px) {
-  body {
-    background-image: url("./images/phone background.jpg");
-    height: 100vh;
+  #root {
+    background-color: #2d2d2d;
   }
-
   /* HEADER CONTROLS */
   .header {
     margin: 0;
     padding: 0;
+    width: 100%;
+    background-color: #333333;
   }
 
   .logo {
-    height: 60px;
+    height: 40px;
     width: auto;
     margin: 15px;
   }
 
-  .icon {
+  .dropdown-icon {
     background: none;
+    color: #505050;
     border: none;
+    margin: 15px;
     float: right;
-    margin: 25px;
+  }
+
+  .menu {
+    border-top: 2px solid #5a5a5a;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .about-icon,
+  .port-icon,
+  .media-icon,
+  .service-icon,
+  .contact-icon {
+    background: none;
+    color: #505050;
+    border: none;
+    margin: 25px 20px 10px 20px;
+  }
+
+  .icon-tag {
+    display: inline-block;
+    font-size: 10px;
+    text-align: center;
+    color: #47ffaf;
+  }
+
+  .icon:active {
+    display: block;
   }
 
   .material-icons {
     font-size: 35px;
     text-align: center;
+    color: #47ffaf;
   }
 
   /* HOME CONTROLS */
   .home {
-    height: 100%;
+    height: 100vh;
     padding: 0;
     margin: 0;
     text-align: center;
   }
 
-  .firstName {
-    font-size: 60px;
-    font-weight: 200;
+  .name {
+    height: 60%;
+    width: 100%;
+    color: #e4e4e4;
     margin-top: 200px;
-    color: #595959;
   }
 
-  .lastName {
-    font-size: 60px;
-    font-weight: 250;
-    margin-top: -25px;
-    color: #595959;
+  .name1 {
+    font-size: 35px;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 100px;
+    margin-bottom: -10px;
   }
 
-  @keyframes bounce {
+  .name2 {
+    font-size: 45px;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: -20px;
+  }
+
+  .name3 {
+    font-size: 40px;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: -10px;
+  }
+
+  .name4 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  .name5 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  .name6 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  /* ABOUT CONTROLS */
+
+  .about {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aboutheading {
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  .headShot {
+    margin: 35px 20px 20px 20px;
+    padding: 0;
+    height: 200px;
+    width: auto;
+  }
+
+  .titles-about {
+    margin: 45px 20px 20px 20px;
+  }
+
+  .webdev,
+  .videographer,
+  .graphic-designer {
+    color: #e4e4e4;
+    float: right;
+    text-align: right;
+    padding: 0;
+    margin-top: 7px;
+  }
+
+  .webdev {
+    font-size: 16px;
+  }
+
+  .videographer {
+    font-size: 16px;
+  }
+
+  .graphic-designer {
+    font-size: 16px;
+  }
+
+  .about-desc {
+    font-size: 20px;
+    color: #e4e4e4;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .color {
+    color: #47ffaf;
+  }
+
+  /* PORTFOLIO CONTROLS */
+
+  .portfolio {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .portheading {
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  .port-options {
+    text-align: center;
+  }
+
+  .graphics-option,
+  .videos-option {
+    font-size: 15px;
+    color: #dadada;
+    text-decoration: none;
+    margin: 10px 20px 10px 0px;
+    animation: pulse-color 2.5s infinite alternate;
+  }
+
+  .web-dev-option {
+    color: #dadada;
+    font-size: 20px;
+    margin: 15px 20px 10px 0px;
+    animation: pulse-color 2.5s infinite alternate;
+  }
+
+  @keyframes pulse-color {
     from {
-      margin-top: 250px;
+      color: #dadada;
     }
     to {
-      margin-top: 245px;
+      color: #47ffaf;
     }
   }
 
-  .icon1 {
-    margin-top: 250px;
-    margin-left: 20px;
-    color: #595959;
-    text-align: center;
-    animation: bounce 1s infinite alternate ease;
+  /*SERVICES CONTROLS*/
+
+  .services {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
   }
 }
 
