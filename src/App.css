@@ -68,7 +68,7 @@ html {
     display: inline-block;
     font-size: 10px;
     text-align: center;
-    color: #47ffaf;
+    color: #efefef;
   }
 
   .icon:active {
@@ -78,7 +78,7 @@ html {
   .material-icons {
     font-size: 35px;
     text-align: center;
-    color: #47ffaf;
+    color: #e4e4e4;
   }
 
   /* HOME CONTROLS */
@@ -246,6 +246,69 @@ html {
     height: 100vh;
     margin: 0;
     padding: 0;
+  }
+
+  /* MEDIA CONTROLS */
+
+  .media {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .banner {
+    height: 145px;
+    width: auto;
+    text-align: center;
+  }
+
+  .podcast {
+    color: #e4e4e4;
+    text-align: center;
+    padding: 0px 15px 15px 15px;
+  }
+
+  .coverart1 {
+    height: 75px;
+    width: auto;
+    margin: 10px;
+    float: left;
+  }
+
+  .coverart2 {
+    height: 75px;
+    width: auto;
+    margin: 10px;
+    float: left;
+  }
+
+  .coverart3 {
+    height: 75px;
+    width: auto;
+    margin: 10px;
+    float: left;
+  }
+
+  .embedded1,
+  .embedded2,
+  .embedded3 {
+    margin: 10px;
+    background-color: rgb(58, 58, 58);
+    height: 95px;
+    width: 90%;
+  }
+
+  .embedded1header,
+  .embedded2header,
+  .embedded3header {
+    font-size: 18px;
+    padding: 20px 15px 0px 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #e4e4e4;
   }
 }
 

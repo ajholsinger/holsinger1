@@ -15,12 +15,14 @@ const About = () => (
       <div className="col-xs-7 videographer">Videographer</div>
     </div>
     <div class="col-xs-12 about-desc">
-      "When I was 14 years old, I began learning about 3 things. Web
-      Development, videography, and graphic design. These 3 things immediately
-      became my passions. At age 20, I was able to complete a coding bootcamp at
-      UNC Charlotte. Here I was able to expand my skills drastically, and
-      ultimately becoming a 'professional' developer. Ever since, I have been
-      accepting new clients for all 3 specialties under my own name."
+      "When I was <span className="color">14 years old,</span> I began learning
+      about 3 things. Web Development, videography, and graphic design. These 3
+      things immediately became my passions. At age 20, I was able to complete a
+      coding bootcamp at
+      <span className="color"> UNC Charlotte.</span> Here I was able to expand
+      my skills drastically, and ultimately becoming a 'professional' developer.
+      Ever since, I have been accepting new clients for all 3 specialties under
+      my own name."
     </div>
   </div>
 );

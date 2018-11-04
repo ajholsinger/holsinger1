@@ -4,6 +4,7 @@ import About from "../src/components/about";
 import Header from "../src/components/header";
 import Home from "../src/components/home";
 import Portfolio from "../src/components/portfolio";
+import Media from "../src/components/media";
 import Services from "../src/components/services";
 import "./App.css";
 
@@ -16,6 +17,7 @@ const App = () => (
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/services" component={Services} />
+        <Route exact path="/media" component={Media} />
       </Switch>
     </main>
   </Router>
