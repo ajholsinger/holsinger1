@@ -21,7 +21,402 @@ html {
   margin: 0;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 699px) {
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  #root {
+    background-color: #2d2d2d;
+  }
+  /* HEADER CONTROLS */
+  .header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #333333;
+  }
+
+  .logo {
+    height: 40px;
+    width: auto;
+    margin: 15px;
+  }
+
+  .dropdown-icon {
+    background: none;
+    color: #505050;
+    border: none;
+    margin: 15px;
+    float: right;
+  }
+
+  .menu {
+    border-top: 2px solid #5a5a5a;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .about-icon,
+  .port-icon,
+  .media-icon,
+  .service-icon,
+  .contact-icon {
+    background: none;
+    color: #505050;
+    border: none;
+    margin: 25px 15px 10px 15px;
+  }
+
+  .icon-tag {
+    display: inline-block;
+    font-size: 10px;
+    text-align: center;
+    color: #efefef;
+  }
+
+  .icon:active {
+    display: block;
+  }
+
+  .material-icons {
+    font-size: 35px;
+    text-align: center;
+    color: #e4e4e4;
+  }
+
+  /* HOME CONTROLS */
+  .home {
+    height: 700px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .name {
+    height: 60%;
+    width: 100%;
+    color: #e4e4e4;
+    margin-top: 150px;
+  }
+
+  .name1 {
+    font-size: 35px;
+    text-align: left;
+    margin-left: 60px;
+    margin-top: 100px;
+    margin-bottom: -10px;
+  }
+
+  .name2 {
+    font-size: 45px;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: -20px;
+  }
+
+  .name3 {
+    font-size: 35px;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: -10px;
+  }
+
+  .name4 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  .name5 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  .name6 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 60px;
+  }
+  /* ABOUT CONTROLS */
+
+  .about {
+    height: 800px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aboutheading {
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  .headShot {
+    margin: 35px 10px 20px 10px;
+    padding: 0;
+    height: 200px;
+    width: auto;
+  }
+
+  .titles-about {
+    margin: 35px 10px 20px 10px;
+  }
+
+  .webdev,
+  .videographer,
+  .graphic-designer {
+    color: #e4e4e4;
+    float: right;
+    text-align: right;
+    padding: 0;
+    margin-top: 7px;
+  }
+
+  .webdev {
+    font-size: 16px;
+  }
+
+  .videographer {
+    font-size: 16px;
+  }
+
+  .graphic-designer {
+    font-size: 16px;
+  }
+
+  .about-desc {
+    font-size: 20px;
+    color: #e4e4e4;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .color {
+    color: #47ffaf;
+  }
+
+  /* PORTFOLIO CONTROLS */
+
+  .portfolio {
+    height: 700px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .portheading {
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  .port-options {
+    text-align: center;
+  }
+
+  .graphics-option,
+  .videos-option {
+    font-size: 15px;
+    color: #dadada;
+    text-decoration: none;
+    margin: 10px 20px 10px 0px;
+    animation: pulse-color 2.5s infinite alternate;
+  }
+
+  .web-dev-option {
+    color: #dadada;
+    font-size: 20px;
+    margin: 15px 20px 10px 0px;
+    animation: pulse-color 2.5s infinite alternate;
+  }
+
+  @keyframes pulse-color {
+    from {
+      color: #dadada;
+    }
+    to {
+      color: #47ffaf;
+    }
+  }
+
+  /*SERVICES CONTROLS*/
+
+  .services {
+    height: 750px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .serviceHeading {
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  .development-services {
+    height: 170px;
+    width: 300px;
+    background-color: rgb(58, 58, 58);
+    margin: 20px auto 40px auto;
+    text-align: center;
+  }
+
+  .dev-header {
+    font-size: 20px;
+    color: #47ffaf;
+    padding: 10px;
+  }
+
+  .dev-skills1 {
+    display: block;
+    float: left;
+    padding-left: 16px;
+  }
+
+  .dev-skills2 {
+    display: block;
+    float: right;
+    padding-right: 16px;
+  }
+
+  .dev-skills1,
+  .dev-skills2 div {
+    font-size: 15px;
+    color: #e4e4e4;
+  }
+
+  .graphic-services {
+    height: 170px;
+    width: 300px;
+    background-color: rgb(58, 58, 58);
+    margin: 20px auto 40px auto;
+    text-align: center;
+  }
+
+  .graphic-header {
+    font-size: 20px;
+    color: #47ffaf;
+    padding: 10px;
+  }
+
+  .graphic-skills1 {
+    display: block;
+    float: left;
+    padding-left: 16px;
+  }
+
+  .graphic-skills2 {
+    display: block;
+    float: right;
+    padding-right: 16px;
+  }
+
+  .graphic-skills1,
+  .graphic-skills2 div {
+    font-size: 15px;
+    color: #e4e4e4;
+  }
+
+  .video-services {
+    height: 170px;
+    width: 300px;
+    background-color: rgb(58, 58, 58);
+    margin: 20px auto 40px auto;
+    text-align: center;
+  }
+
+  .video-header {
+    font-size: 20px;
+    color: #47ffaf;
+    padding: 10px;
+  }
+
+  .video-skills1 {
+    display: block;
+    float: left;
+    padding-left: 16px;
+  }
+
+  .video-skills2 {
+    display: block;
+    float: right;
+    padding-right: 16px;
+  }
+
+  .video-skills1,
+  .video-skills2 div {
+    font-size: 15px;
+    color: #e4e4e4;
+  }
+
+  /* MEDIA CONTROLS */
+
+  .media {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .banner {
+    height: 145px;
+    width: auto;
+    text-align: center;
+  }
+
+  .podcast {
+    color: #e4e4e4;
+    text-align: center;
+    padding: 0px 15px 15px 15px;
+  }
+
+  .coverart1 {
+    height: 75px;
+    width: auto;
+    margin: 10px;
+    float: left;
+  }
+
+  .coverart2 {
+    height: 75px;
+    width: auto;
+    margin: 10px;
+    float: left;
+  }
+
+  .coverart3 {
+    height: 75px;
+    width: auto;
+    margin: 10px;
+    float: left;
+  }
+
+  .embedded1,
+  .embedded2,
+  .embedded3 {
+    margin: 10px;
+    background-color: rgb(58, 58, 58);
+    height: 95px;
+    width: 90%;
+  }
+
+  .embedded1header,
+  .embedded2header,
+  .embedded3header {
+    font-size: 18px;
+    padding: 20px 15px 0px 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #e4e4e4;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 699px) {
   #root {
     background-color: #2d2d2d;
   }
@@ -243,9 +638,113 @@ html {
   /*SERVICES CONTROLS*/
 
   .services {
-    height: 100vh;
+    height: 700px;
     margin: 0;
     padding: 0;
+  }
+
+  .serviceHeading {
+    color: #e4e4e4;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 500;
+  }
+
+  .development-services {
+    height: 170px;
+    width: 300px;
+    background-color: rgb(58, 58, 58);
+    margin: 20px auto 40px auto;
+    text-align: center;
+  }
+
+  .dev-header {
+    font-size: 20px;
+    color: #47ffaf;
+    padding: 10px;
+  }
+
+  .dev-skills1 {
+    display: block;
+    float: left;
+    padding-left: 16px;
+  }
+
+  .dev-skills2 {
+    display: block;
+    float: right;
+    padding-right: 16px;
+  }
+
+  .dev-skills1,
+  .dev-skills2 div {
+    font-size: 15px;
+    color: #e4e4e4;
+  }
+
+  .graphic-services {
+    height: 170px;
+    width: 300px;
+    background-color: rgb(58, 58, 58);
+    margin: 20px auto 40px auto;
+    text-align: center;
+  }
+
+  .graphic-header {
+    font-size: 20px;
+    color: #47ffaf;
+    padding: 10px;
+  }
+
+  .graphic-skills1 {
+    display: block;
+    float: left;
+    padding-left: 16px;
+  }
+
+  .graphic-skills2 {
+    display: block;
+    float: right;
+    padding-right: 16px;
+  }
+
+  .graphic-skills1,
+  .graphic-skills2 div {
+    font-size: 15px;
+    color: #e4e4e4;
+  }
+
+  .video-services {
+    height: 170px;
+    width: 300px;
+    background-color: rgb(58, 58, 58);
+    margin: 20px auto 40px auto;
+    text-align: center;
+  }
+
+  .video-header {
+    font-size: 20px;
+    color: #47ffaf;
+    padding: 10px;
+  }
+
+  .video-skills1 {
+    display: block;
+    float: left;
+    padding-left: 16px;
+  }
+
+  .video-skills2 {
+    display: block;
+    float: right;
+    padding-right: 16px;
+  }
+
+  .video-skills1,
+  .video-skills2 div {
+    font-size: 15px;
+    color: #e4e4e4;
   }
 
   /* MEDIA CONTROLS */

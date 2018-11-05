@@ -32,12 +32,12 @@ class Portfolio extends Component {
 
         <div className="port-content" id="port-content">
           <div className="graph-port">
-            <div className="graph-header">Web Development</div>
-            <div className="graph-portfolio-content">DEVELOPMENT</div>
+            <div className="graph-port-header">Web Development</div>
+            <div className="graph-port-content">DEVELOPMENT</div>
           </div>
           <div className="dev-port">
-            <div className="dev-header">Web Development</div>
-            <div className="dev-portfolio-content">DEVELOPMENT</div>
+            <div className="dev-port-header">Web Development</div>
+            <div className="dev-port-content">DEVELOPMENT</div>
           </div>
         </div>
       </div>
