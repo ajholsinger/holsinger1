@@ -56,7 +56,7 @@ const Services = () => (
         <div>Edits</div>
         <div>Intros</div>
         <div>
-          <span className="color">Hype Videos</span>
+          <span className="color">Branding</span>
         </div>
         <div>Real Estate</div>
         <div>Music Videos</div>

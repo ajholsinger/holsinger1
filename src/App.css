@@ -21,6 +21,12 @@ html {
   margin: 0;
 }
 
+.color {
+  color: #47ffaf;
+  animation: nameAppear 1.3s;
+  animation-iteration-count: 1;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 400px) {
   #root {
     background-color: #2d2d2d;
@@ -189,10 +195,6 @@ html {
     color: #e4e4e4;
     margin-top: 20px;
     text-align: center;
-  }
-
-  .color {
-    color: #47ffaf;
   }
 
   /* PORTFOLIO CONTROLS */
@@ -420,12 +422,15 @@ html {
   #root {
     background-color: #2d2d2d;
   }
+
   /* HEADER CONTROLS */
   .header {
     margin: 0;
     padding: 0;
     width: 100%;
     background-color: #333333;
+    animation: appear ease-in 1s;
+    animation-iteration-count: 1;
   }
 
   .logo {
@@ -470,10 +475,54 @@ html {
     display: block;
   }
 
-  .material-icons {
+  .nav {
     font-size: 35px;
     text-align: center;
     color: #e4e4e4;
+    animation: matAppear 0.6s;
+    animation-iteration-count: 1;
+  }
+
+  .Aicon,
+  .Picon,
+  .Micon,
+  .Sicon,
+  .Cicon {
+    font-size: 35px;
+    text-align: center;
+    color: #e4e4e4;
+  }
+
+  @keyframes appear {
+    from {
+      background-color: #2d2d2d;
+      width: 35%;
+    }
+
+    to {
+      background-color: #333333;
+      width: 100%;
+    }
+  }
+
+  @keyframes matAppear {
+    from {
+      color: #2d2d2d;
+    }
+
+    to {
+      color: #e4e4e4;
+    }
+  }
+
+  @keyframes nameAppear {
+    from {
+      color: #2d2d2d;
+    }
+
+    to {
+      color: #47ffaf;
+    }
   }
 
   /* HOME CONTROLS */
@@ -796,6 +845,8 @@ html {
     background-color: rgb(58, 58, 58);
     height: 95px;
     width: 90%;
+    animation: podAppear ease-in 01.4s;
+    animation-iteration-count: 1;
   }
 
   .embedded1header,
@@ -808,6 +859,18 @@ html {
   a {
     text-decoration: none;
     color: #e4e4e4;
+  }
+
+  @keyframes podAppear {
+    from {
+      background-color: #2d2d2d;
+      color: #2d2d2d;
+    }
+
+    to {
+      background-color: rgb(58, 58, 58);
+      color: #e4e4e4;
+    }
   }
 }
 

@@ -22,7 +22,9 @@ class Media extends Component {
               <div className="embedded1header">
                 Episode 1 - The Introduction
               </div>
-              <div className="embedded1runtime">22:51</div>
+              <div className="embedded1runtime">
+                <span className="color">22:51</span>
+              </div>
             </div>
           </a>
           <a href="/bitches">
@@ -31,7 +33,9 @@ class Media extends Component {
               <div className="embedded2header">
                 Episode 2 - Daily Dreamer v.1
               </div>
-              <div className="embedded2runtime">23:43</div>
+              <div className="embedded2runtime">
+                <span className="color">23:43</span>
+              </div>
             </div>
           </a>
           <a href="/bitches">
@@ -40,7 +44,9 @@ class Media extends Component {
               <div className="embedded1header">
                 Episode 3 - Daily Dreamer v.2
               </div>
-              <div className="embedded1runtime">21:33</div>
+              <div className="embedded1runtime">
+                <span className="color">21:33</span>
+              </div>
             </div>
           </a>
         </div>
